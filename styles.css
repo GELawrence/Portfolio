@@ -163,6 +163,16 @@ section{padding:96px 0;}
   .trusted-inner{grid-template-columns:1fr; gap:32px;}
   .trusted-logos{grid-template-columns:repeat(2,1fr);}
 }
+.trusted-quotes{
+  margin-top:56px; padding-top:40px; border-top:1px solid rgba(255,255,255,0.12);
+  display:grid; grid-template-columns:1fr 1fr; gap:40px;
+}
+.trusted-quote{font-family:var(--body-face); font-size:15px; line-height:1.65; color:#c7dcd0; font-style:italic;}
+.trusted-quote cite{
+  display:block; margin-top:14px; padding-left:16px; border-left:2px solid var(--accent-bright);
+  font-family:var(--mono-face); font-size:11.5px; font-style:normal; color:var(--accent-bright); letter-spacing:.02em;
+}
+@media (max-width:800px){ .trusted-quotes{grid-template-columns:1fr; gap:32px;} }
 
 /* ---------------- throughline compact card ----------------
    For the supporting clients in each section — same anatomy as
